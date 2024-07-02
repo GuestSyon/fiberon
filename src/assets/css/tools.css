@@ -1,0 +1,68 @@
+
+/* .tool .tv-modal {position: absolute; transform: translate(-50%, -50%) perspective(3000px) rotateY(10deg) rotateX(-1deg);  margin:0; display: flex; flex-direction: column; border: 5px solid black; background-color: white; opacity: 0; cursor: pointer;} */
+
+.tool-wrapper {width: 100%; height: 100%; position: relative;}
+.tool-wrapper .tv-page {width: 98%; height: calc(98% - 10px); position: absolute; top: 0; left: 0; padding: 1%; background-color: white;}
+.tool-wrapper .tv-page.loading {z-index: -1;} 
+.tool-wrapper .tv-page.loading.show {z-index: 3;}
+
+.tool-wrapper .tv-page.section-part {width: 100%; height: 100%; padding: 0;}
+.tool-wrapper .tv-page.section-part .section-item { width: 100%; height: 33.3%; cursor: pointer; background-color: white; transition: all 0.3s;}
+.tool-wrapper .tv-page.section-part .section-item img {width: 100%; height: 100%; transform: scale(0.98, 0.95); opacity: 0.9; filter: blur(0.5px); transition: all 0.3s;}
+.tool-wrapper .tv-page.section-part .section-item:hover {background-color: #DDDDDD;}
+.tool-wrapper .tv-page.section-part .section-item:hover img {transform: scale(1); opacity: 1; filter: blur(0px);}
+
+.tool-wrapper .tv-page .title {text-align: center; font-size: 36px; padding-bottom: 1%; }
+.tool-wrapper .tv-page .title .sub-title {font-size: 28px;}
+.tool-wrapper .tv-page .row-item {width: calc(100% - 2px); height: 13%;}
+.tool-wrapper .tv-page .row-item .button {flex: 1; text-align: center; height: 75%; max-width: 31%; margin: auto; line-height: 120%;background-color: white;}
+.tool-wrapper .tv-page .row-item .button:hover {background-color: #525047;}
+.tool-wrapper .tv-page .row-item.row-length-1 {margin: 10% 0%;}
+.tool-wrapper .tv-page .row-item.row-length-2 {height: 30%;}
+.tool-wrapper .tv-page .row-item.row-length-2 .button {height: 50%;}
+.tool-wrapper .tv-page .row-item.row-length-3 {height: 20%;}
+.tool-wrapper .tv-page .row-item.row-length-3 .button {height: 68%;}
+.tool-wrapper .tv-page .row-item.row-length-4 {height: 15%;}
+.tool-wrapper .tv-page .row-item.row-length-4 .button {height: 72%;}
+.tool-wrapper .tv-page .row-item.row-length-5 {height: 13%;}
+
+.tool-wrapper .tv-page .row-contact {padding-bottom: 2%; }
+.tool-wrapper .tv-page .row-contact * {font-size: 16px; text-align: center;}
+.tool-wrapper .tv-page .row-contact .contact-label {padding: 1% 0px;}
+.tool-wrapper .tv-page .row-contact .contact-info {color: #2488CE;}
+.tool-wrapper .tv-page .row-contact .contact-url {cursor: pointer; margin-left: 7px;}
+
+.tool-wrapper .tv-page .main-logo img {width: 23%;}
+.tool-wrapper .tv-page.split .main-logo img { width: 32%; }
+
+.tool-wrapper .tv-page .row-item.breakout-row {height: 140px;}
+
+.tool-wrapper .tv-page.split {display: flex;}
+.tool-wrapper .tv-page .button-content {flex: 5; height: 100%;}
+.tool-wrapper .tv-page.split .button-content {border-right: 2px solid;}
+.tool-wrapper .tv-page.split .logo-content {flex: 2; padding: 5% 0px 0px 2%;}
+.tool-wrapper .tv-page.split .logo-content * {text-align: center;}
+.tool-wrapper .tv-page.split .row-item .button { max-width: 44%;}
+.tool-wrapper .tv-page.split .row-item .button.full-width { max-width: 94%;}
+
+.tool-wrapper .tv-page.split .logo-content .logo-label {font-size: 26px; margin-bottom: 30px;}
+.tool-wrapper .tv-page.split .logo-content .logo-item {margin: 10% 0px; cursor: pointer;}
+.tool-wrapper .tv-page.split .logo-content .logo-item img {width: 70%; opacity: 0.85; transition: all 0.3s;}
+.tool-wrapper .tv-page.split .logo-content .logo-item:hover img {transform: scale(1.15); opacity: 1;}
+
+.tool .hover-door {position: absolute; top: 50vh; right: 12vw; border-radius: 5px; padding: 7px 15px; border: 2px solid #E81E2E; background-color: rgba(255, 255, 255, 0.8);}
+@media only screen and (max-height: 750px) {
+	.tool-wrapper .tv-page .title {font-size: 24px;}
+	.tool-wrapper .tv-page .title .sub-title {font-size: 16px; }
+	.tool-wrapper .tv-page .row-item .button {font-size: 11px;}
+	.tool-wrapper .tv-page .row-contact .contact-label {font-size: 10px;}
+	.tool-wrapper .tv-page .row-contact .contact-info {font-size: 12px;}
+	.tool-wrapper .tv-page.split .logo-content .logo-label {font-size: 20px;}
+}
+
+.mobile .tool-wrapper .tv-page .title {font-size: 16px;}
+.mobile .tool-wrapper .tv-page.split .logo-content .logo-label {font-size: 12px; margin-bottom: 10px;}
+.mobile .tool-wrapper .tv-page .row-item .button {font-size: 8px;}
+/* .mobile.ipad .tool-wrapper .tv-page .row-item .button {font-size: 12px;} */
+.mobile .tool-wrapper .tv-page .row-contact {padding: 0;}
+.mobile .tool-wrapper .tv-page .row-contact .contact-info.mobile-hide {display: none;}

@@ -1,0 +1,49 @@
+.guide-tour { width: 0; height: 0; overflow: initial;}
+.guide-tour.back-board.active { z-index: 3; }
+
+.guide-tour .side-menu { position: absolute;	left: -270px; top: calc(50vh - 200px); opacity: 0; transition: all 0.5s; width: auto;}
+.guide-tour .side-menu.active {left: 0; opacity: 1;}
+
+.guide-tour .side-menu .button { font-size: 16px; height: 36px; width: 180px; }
+.guide-tour .side-menu .place-menu {padding: 10px 20px; background-color: rgba(222, 223, 221, 0.8); border: 1px solid #525047;}
+.guide-tour .side-menu .place-menu .button {margin: 8px 0px; justify-content: flex-start; padding-left: 20px; cursor: default;}
+.guide-tour .side-menu .place-menu .button:hover { background-color: #DEDFDD; color: #525047;}
+.guide-tour .side-menu .place-menu .button.active { background-color: #525047; color: white;}
+
+.guide-tour .side-menu .control-menu {margin-top: 12px; padding-left: 15px;}
+.guide-tour .side-menu .control-menu .button {background-color: #9A9388; color: white; margin: 4px;}
+.guide-tour .side-menu .control-menu .button:hover {background-color: #525047;}
+.guide-tour .side-menu .control-menu .button.disable {background-color: #80796f; color: rgb(167, 167, 167); cursor: default;}
+
+.guide-tour .icon-group { display: flex; margin-top: -100px; opacity: 0; transition: all 0.5s;}
+.guide-tour .icon-group.active { margin-top: 28vh; opacity: 1;}
+.guide-tour .icon-group .icon-wrapper { height: 98px; width: 98px; position: relative; margin: 0px 24px;}
+.guide-tour .icon-group .icon-inner { height: 100%; width: 100%; position: absolute; top: 0; left: 0;}
+.guide-tour .icon-group .icon-inner img { height: 100%; width: 100%; }
+
+.guide-tour .icon-group .icon-inner.arrow-icon.animate img { transition: transform 0.5s; }
+.guide-tour .icon-group .icon-inner.arrow-icon.rotate img { transform: rotate(180deg); }
+
+.guide-tour .icon-group .icon-inner.scale-icon img { transform: scale(0.7); transition: transform 0.5s;}
+.guide-tour .icon-group .icon-inner.scale-icon.active img { transform: scale(0.85); }
+
+.guide-explore .pan-board { position: absolute; right: 12px; bottom: -500px; width: 360px; height: 480px; background-color: black; opacity: 0; transition: all 0.3s; }
+.guide-explore .pan-board.active { bottom: 12px; opacity: 1; }
+.guide-explore .pan-board .pan-bottom { position: absolute; bottom: 12px; width: 100%;}
+.guide-explore .pan-board .pan-icon { width: 40px; height: 40px; border-radius: 50%; background-color: white; margin: 0px 8px; cursor: pointer;}
+.guide-explore .pan-board .pan-icon svg {transform: scale(0.75);}
+
+.guide-explore .pan-board .pan-icon .slash-video {display: none;}
+.guide-explore .pan-board .pan-icon .slash-sound {display: none;}
+.guide-explore .pan-board .pan-icon.disable-video .slash-video {display: block;}
+.guide-explore .pan-board .pan-icon.disable-sound .slash-sound {display: block;}
+
+.guide-explore .pan-button { position: absolute; left: calc(50% - 50px); bottom: 12px; background-color: #525047; border-radius: 4px; color: white; padding: 8px 30px; cursor: pointer;}
+.guide-explore .pan-button:hover { background-color: #9A9388; }
+
+.mobile .guide-tour .side-menu .place-menu {padding: 10px;}
+.mobile .guide-tour .side-menu {width: auto;}
+.mobile .guide-tour .side-menu .button {margin: 4px 0px; padding-left: 10px; height: 30px; font-size: 12px;}
+.mobile .guide-tour .side-menu .place-menu .button {width: 160px;}
+.mobile .guide-tour .side-menu .control-menu {display: flex; padding: 0px 5px;}
+.mobile .guide-tour .side-menu .control-menu .control-item {width: 30%; margin: 0% 1%; padding: 0;}

@@ -1,0 +1,64 @@
+
+.canvas { position: absolute; width: 100vw; height: 100vh; z-index: -1; transition: left 0.5s; overflow: hidden;}
+.mobile .canvas { height: calc(100vh - 55px); }
+/* .mobile.ipad .canvas { height: 100vh; } */
+
+.canvas .hotOver-wrapper {position: absolute; opacity: 0; transform: scale(0.01); height: 0px; transition: transform 0.4s, opacity 0.4s;}
+.canvas .hotOver-wrapper * { cursor: pointer;}
+.canvas .hotOver-wrapper .hot-inner {position: relative; padding: 10px 20px; border-radius: 10px; transition: all 0.4s;}
+
+.canvas .hotOver-wrapper.active {opacity: 1; transform: scale(1);}
+
+.canvas .hot-wrapper { width: 0px; text-align: center;}
+.canvas .hot-wrapper .hot-inner { min-width: 150px; background-color: #E02F25; color: white; font-size: 20px;}
+.canvas .hot-wrapper .hot-arrow { width: 0;  height: 0;  border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 16px solid #E02F25; position: absolute; bottom: -16px;}
+
+.canvas .hot-wrapper.active .hot-inner {margin-top: -90px;}
+
+.canvas .left-wrapper {justify-content:flex-start;}
+.canvas .left-wrapper .hot-inner { justify-content: flex-start; background-color: white; color: black; font-size: 18px; border: 2px solid grey;}
+.canvas .left-wrapper.active {opacity: 1; transform: scale(1);}
+.canvas .left-wrapper.active .hot-inner {margin-left: 40px; margin-top: -30px;}
+
+.canvas .left-wrapper .hot-inner.redborder { border-color: #E81E2E; }
+.canvas .left-wrapper .hot-inner.blueborder { border-color: #1A7CBF; }
+
+#render2dWrapper { position: absolute; top: 0; left: 0;}
+.tv-plane-wrapper { position: relative; width: 100%; height: 100%; background-color: #422b19;}
+.tv-plane-wrapper .close-balance-tv {position: absolute; width: 30px; height: 30px; background-color: rgba(255, 255, 255, 0.5); border-radius: 50%; top: 15px; right: 15px; cursor: pointer;}
+.tv-plane-wrapper .close-balance-tv svg {width: 60%; height: 60%; transition: all 0.5s;}
+.tv-plane-wrapper .close-balance-tv:hover svg {transform: rotate(-90deg);}
+.tv-plane-wrapper .tv-plane-inner { position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.tv-plane-inner .tv-plane-back { width: 100%; padding-top: 100px;}
+.tv-plane-inner img {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.tv-plane-inner .tv-label {position: absolute; width: 96%; left: 3%; bottom: 3%;}
+.tv-plane-inner .tv-label * {color: white; font-size: 16px; }
+.tv-plane-inner .canvasIcon { position: absolute; top: 35.9%; left: 35.7%; width: 84px; height: 84px; cursor: pointer; transition: all 0.3s; transform: translate(-50%, -50%);}
+/* .tv-plane-inner .canvasIcon:hover { transform: translate(-50%, -50%) scale(1.2); } */
+
+#render2d .canvasIcon.modal-open {visibility: hidden;}
+#render2d .hot-label.modal-open {visibility: hidden;}
+#render2d .canvasIcon .hot-circle { width: calc(100% - 10px); height: calc(100% - 10px); border-radius: 50%; border: 5px solid; animation-duration: 3s; animation-iteration-count: infinite; opacity: 0; animation-name: hotPulse;}
+#render2d .canvasIcon .hot-circle{border-color: #565E2FFF;}
+
+#render2d .canvasIcon .hot-image {position: absolute; top: 0; left: 0; width: 100%;}
+#render2d .canvasIcon .hot-image img {width: 100%;}
+#render2d .canvasIcon .hot-image svg {width: 100%; height: 100%;}
+#render2d .canvasIcon .hot-image svg .icon-inner-line {transition: stroke 0.3s;}
+#render2d .canvasIcon .hot-image:hover svg .icon-inner-line {stroke: white;}
+/* #render2d .hot-label .label-string {font-size: 20px;} */
+
+#render2d .canvasIcon .hot-back {position: absolute; top: 6%; left: 6%; width: 88%; height: 88%; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); transition: background-color 0.3s;}
+#render2d .canvasIcon:hover .hot-back{background-color: rgba(51, 51, 0, 0.5);}
+
+#render2d .TV-modal-close { visibility: hidden;}
+#render2d .TV-modal-close.modal-open { visibility: visible; cursor: pointer;}
+
+@keyframes hotPulse {
+	0%   {transform: scale(1); opacity: 0;}
+	35%  {transform: scale(1); opacity: 1;}
+	70%  {transform: scale(2); opacity: 0;}
+	100% {transform: scale(1); opacity: 0;}
+}
+
+#videoIconLoop { display: none !important; position: absolute; top: 100vh; left: 100vw; width: 0px; height: 0px; z-index: -10;}

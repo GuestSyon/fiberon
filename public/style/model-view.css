@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+#container{
+
+}
+.loading-wrapper{
+    position: absolute;
+    left: calc(50vw - 200px);
+    bottom: 50px;
+    width: 400px;
+}
+.loading-wrapper .title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+.loading-stick{
+    height: 27px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.loading-stick .loading-inner{
+    height: 100%;
+    width: 0%;
+    background-color: #0eb10e;
+}
+.loading-label{
+    margin-top: -30px;
+    text-align: center;
+    font-weight: 900;
+}

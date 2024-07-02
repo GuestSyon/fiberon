@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.804" height="74.804" viewBox="0 0 74.804 74.804">
+    <defs>
+        <style>.a,.b{fill:none;}.b{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
+    </defs>
+    <g transform="translate(0.001)">
+        <circle class="b" cx="28.303" cy="28.303" r="28.303" transform="translate(9.469 8.727)"/>
+        <line class="b" transform="translate(37.147 25.104)"/>
+        <path class="b" d="M11,12h3.1V24.383h3.1" transform="translate(23.305 25.452)"/>
+    </g>
+</svg>

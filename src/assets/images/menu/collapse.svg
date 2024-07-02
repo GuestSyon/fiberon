@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.41" height="24" viewBox="0 0 85.41 24">
+    <defs>
+        <style>.collapse-a,.collapse-b{fill:none;}.collapse-b{stroke:#525047;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;}</style>
+    </defs>
+    <g transform="translate(0 24) rotate(-90)">
+        <path class="collapse-a" d="M0,0H24V85.41H0Z" />
+        <path class="collapse-b" d="M9,6l6,21.353L9,48.705" transform="translate(0 15.353)" />
+    </g>
+</svg>

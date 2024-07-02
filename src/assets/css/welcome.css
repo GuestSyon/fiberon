@@ -1,0 +1,64 @@
+
+.welcome { background-image: url('../images/welcome/back.jpg'); flex-direction: column; }
+.welcome .welcome-wrapper { position: relative; width: 750px; height: 640px; background-color: #FFFFFF; max-height: calc(100vh - 80px); transition: height 0.2s;}
+.welcome .welcome-wrapper.signup-wrapper { height: 740px; max-height: calc(100vh - 80px);}
+.welcome-wrapper { position: absolute; flex-direction: column; z-index: 1;}
+.welcome-wrapper .label-top { font-family: 'Poppins-regular'; font-size: 27px; color: #525047; margin: 10px 0px;}
+.welcome-wrapper .welcome-logo { width: 60%; margin: 20px 0px;}
+.welcome-wrapper .welcome-logo img { width: 100%;}
+
+.welcome-wrapper input { background-color: white; border: 1px solid #525047; font-family: 'Poppins-regular';}
+
+.welcome-wrapper .input-wrapper.login input { padding: 10px 15px; font-size: 20px;}
+.welcome-wrapper .input-wrapper {margin: 20px;}
+.welcome-wrapper .input-wrapper.signup {flex-direction: column; margin-bottom: 0; margin-top: 0;}
+.welcome-wrapper .input-wrapper.signup .red-label {color:#DC3545; transition: color 0.2s;}
+/* .welcome-wrapper .input-wrapper.signup .red-label.active {color: #DC3545;} */
+
+.welcome-wrapper .input-wrapper .email-input { width: 600px;}
+
+.welcome-wrapper .input-wrapper .sign-row {display: flex; justify-content: center; margin: 7px 0px; height: 43px;}
+.welcome-wrapper .input-wrapper .sign-row input { margin: 0px 10px; width: 250px; padding: 8px 13px; font-size: 16px;}
+.welcome-wrapper .input-wrapper .sign-row.one-item { margin: 0px; height: 10px; transition: height 0.2s;}
+.welcome-wrapper .input-wrapper .sign-row.one-item.other-job {height: 35px;}
+.welcome-wrapper .input-wrapper .sign-row.one-item.other-job input { opacity: 1;}
+.welcome-wrapper .input-wrapper .sign-row.one-item input { margin: 0px; width: 548px; font-size: 14px; padding: 4px 13px; transition: all 0.2s;}
+.welcome-wrapper .input-wrapper .sign-row select {padding: 8px 13px; width: 575px; font-family: 'Poppins-regular'; font-size: 16px;}
+.welcome-wrapper .input-wrapper .sign-row.check-row {height: 20px;}
+/* .welcome-wrapper .input-wrapper .sign-row.check-row.other-job {margin-top: 7px;} */
+.welcome-wrapper .input-wrapper .sign-row .role-check {width: 20px;}
+
+.welcome-wrapper .button-wrapper { margin: 20px;}
+.welcome-wrapper .button { padding: 8px; width: 170px; margin: 0px 10px; background-color: #FFFFFF; height: 30px;}
+.welcome-wrapper .button:hover { background-color: #DDDDDD; color: #666666;}
+
+.welcome-wrapper .label-bottom { font-family: 'Poppins-regular'; font-size: 14px; color: #000000; margin-bottom: 25px; font-weight: 700;}
+.welcome-wrapper .label-bottom .blue{ color: #107BF8; cursor: pointer;}
+
+.mobile .welcome .welcome-wrapper { width: calc(100vw - 60px); height: 92%; background-color: #FFFFFFDD;}
+.mobile .welcome .welcome-wrapper.signup-wrapper {justify-content: flex-start;}
+.mobile .welcome-wrapper .label-top {font-size: 20px;}
+.mobile .welcome-wrapper .welcome-logo {height: calc(100vh - 280px); width: auto; margin: 10px 0px;}
+.mobile .welcome-wrapper .welcome-logo img {height: 100%; width: auto;}
+.mobile .welcome-wrapper .input-wrapper {margin: 0;}
+.mobile .welcome-wrapper .label-middle {font-size: 30px;}
+.mobile .welcome-wrapper .input-wrapper .email-input {width: calc(100vw - 240px); font-size: 16px; padding: 5px 10px;}
+.mobile .welcome-wrapper .button-wrapper {margin: 10px;}
+.mobile .welcome-wrapper .button {padding: 5px; width: 130px;}
+.mobile .welcome-wrapper .label-bottom {font-size: 12px;}
+.mobile .welcome-wrapper .input-wrapper .sign-row {height: 38px;}
+.mobile .welcome-wrapper .input-wrapper .sign-row input {font-size: 14px;}
+
+/* .mobile.ipad .welcome .welcome-wrapper {width: 750px; height: 640px;}
+.mobile.ipad .welcome-wrapper .label-top {flex: inherit;}
+.mobile.ipad .welcome-wrapper .welcome-logo {margin: 30px 0px;}
+.mobile.ipad .welcome-wrapper .input-wrapper {margin: 20px;}
+.mobile.ipad .welcome-wrapper .input-wrapper .email-input {width: 600px;}
+
+.mobile.ipad .welcome-wrapper.signup-wrapper .label-top {flex: auto;} */
+
+.mobile .welcome-wrapper {max-height: 100%; overflow-y: auto; justify-content: flex-start;}
+
+@media only screen and (max-height: 700px) {
+	.web .welcome .welcome-wrapper .welcome-logo img { height: 180px; width: auto; }
+}

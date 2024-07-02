@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>.reset-a,.reset-b{fill:none;}.reset-b{stroke:#525047;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+    </defs>
+    <path class="reset-a" d="M0,0H24V24H0Z" />
+    <path class="reset-b" d="M20,11A8.1,8.1,0,0,0,4.5,9M4,5V9H8" />
+    <path class="reset-b" d="M4,13a8.1,8.1,0,0,0,15.5,2m.5,4V15H16" />
+</svg>

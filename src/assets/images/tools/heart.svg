@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="160px" height="160px" viewBox="0 0 160 160">
+    <g>
+        <g id="Layerheart_0_FILL">
+            <path class="inside" fill="#FFFFFF" stroke="none" d="
+                M 142.05 57.05
+                L 141.05 54.05
+                Q 119.7951171875 14.59375 85.05 47.05
+                L 80.75 48.05
+                Q 46 15.6 24.75 55.05
+                L 24.75 56.05
+                Q 11.05 94.6 80.75 137.05
+                L 85.05 136.05
+                Q 154.7705078125 93.5923828125 142.05 57.05 Z" />
+        </g>
+
+        <path class="outline" id="Layerheart_0_1_STROKES" stroke="#787B7B" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+            M 142.05 57.05
+            Q 154.7705078125 93.5923828125 85.05 136.05
+            M 24.75 56.05
+            Q 11.05 94.6 80.75 137.05
+            M 80.75 48.05
+            Q 46 15.6 24.75 55.05
+            M 85.05 47.05
+            Q 119.7951171875 14.59375 141.05 54.05" />
+    </g>
+</svg>
